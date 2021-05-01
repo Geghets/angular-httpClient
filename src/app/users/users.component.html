@@ -1,0 +1,12 @@
+<div class="component">
+  <h3>User Data from Json placeholder using service and httpClient</h3>
+  <h2>Users</h2>
+
+  <div *ngIf="users">
+    <div (click)="singleUser($event)"
+         class="user" id="{{user.id}}"
+         [routerLink]="['/users', user.id]"
+         *ngFor="let user of users">{{user.name}} <hr>
+    </div>
+  </div>
+</div>

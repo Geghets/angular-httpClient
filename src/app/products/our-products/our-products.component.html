@@ -1,0 +1,15 @@
+<div class="container our-product pt-2 pb-3">
+  <div class="row mt-5 d-flex flex-column justify-content-center align-items-center">
+    <div class="col-md-6">
+      <div class="form-group">
+        <h3>{{productName}}</h3>
+        <h4>Click below button to send message from this component to parent component</h4>
+
+<!--        <input type="text" class="form-control"-->
+<!--               id="" aria-describedby="emailHelp" placeholder="Enter product type" [(ngModel)]="productName">-->
+        <button type="button" (click)="sendMessageOutput()"
+                class="btn btn-success mt-2">Send message to parent</button>
+      </div>
+    </div>
+  </div>
+</div>

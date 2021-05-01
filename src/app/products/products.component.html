@@ -1,0 +1,4 @@
+<div class="container products mt-5">
+  <h1 *ngIf="messageFromChildComponent">{{  messageFromChildComponent }}</h1>
+  <app-our-products (messageOutputEvent)="receiveMessage($event)" [productName]="dataFromParentComponent"></app-our-products>
+</div>

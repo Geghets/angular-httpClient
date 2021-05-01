@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-12 d-flex justify-content-around">
+      <button class="btn btn btn-danger" [routerLink]="'/users'">Go to Users</button>
+      <button class="btn btn btn-warning" [routerLink]="'/products'">Go To Products</button>
+      <button class="btn btn btn-info" [routerLink]="'/shop'">Go to Shop</button>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+<!-- <h2>{{name}}</h2>-->
+<!-- <h2>{{name | lowercase }}</h2>-->
+<!-- <h2>{{name | uppercase }}</h2>-->
+<!-- <h2>{{message | titlecase}}</h2>-->
+<!-- <h2>{{name | slice: 2:3 }}</h2>-->
+
+<!-- <h2>{{0.25 | percent}}</h2>-->
+<!-- <h2>{{0.25 | currency: 'GBP'}}</h2>-->
+<!-- <h2>{{date | date:'short'}}</h2>-->
+<!-- <h2>{{date | date:'shortDate'}}</h2>-->
+<!-- <h2>{{date | date:'shortTime'}}</h2>-->
