@@ -1,0 +1,17 @@
+<div class="container our-shop pt-1 pb-3">
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <h5>This is Child component</h5>
+      <hr>
+      <h6>Below is data from Child Component</h6>
+      <div *ngFor="let shopItem of shopList">
+        <p>
+          {{shopItem | titlecase}}
+        </p>
+      </div>
+      <hr>
+      <h5>For sending this data to Parent click Button Below</h5>
+      <button class="btn btn btn-info" (click)="sendData()">Send Data</button>
+    </div>
+  </div>
+</div>

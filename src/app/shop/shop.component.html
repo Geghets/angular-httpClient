@@ -1,1 +1,9 @@
-<p>shop works!</p>
+<div class="container shop mt-5">
+  <h4>This is Parent component</h4>
+  <div *ngIf="products">
+    <hr>
+      <h6>This is data from Child component</h6>
+      <p *ngFor="let item of products">{{item | titlecase}}</p>
+  </div>
+  <app-our-shop (shopListEvent)="receiveData($event)"></app-our-shop>
+</div>
