@@ -8,6 +8,7 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 export class OurShopComponent implements OnInit {
 
   public shopList = ['apple', 'grape', 'berry', 'banana'];
+  public dataTpParent = ['shorts', 't-shirts', 'trousers', 'jeans'];
 
   @Output() shopListEvent = new EventEmitter<any>();
 

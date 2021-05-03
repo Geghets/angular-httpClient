@@ -6,4 +6,15 @@
       <p *ngFor="let item of products">{{item | titlecase}}</p>
   </div>
   <app-our-shop (shopListEvent)="receiveData($event)"></app-our-shop>
+  <div class="mt-5 childData" *ngIf="dataFromChild">
+    <h3>Data From Child Component using ViewChild</h3>
+    <p *ngFor="let data of dataFromChild">
+      {{data | titlecase}}
+    </p>
+  </div>
+  <div class="mt-5" *ngIf="message">
+    <h3>This is data from data service which can be modified from here or Product</h3>
+    <p>{{message}}</p>
+    <button class="btn btn btn-danger" (click)="shopChange()">Change Data</button>
+  </div>
 </div>
