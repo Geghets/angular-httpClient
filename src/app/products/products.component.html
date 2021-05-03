@@ -1,4 +1,9 @@
 <div class="container products mt-5">
   <h1 *ngIf="messageFromChildComponent">{{ messageFromChildComponent }}</h1>
   <app-our-products (messageOutputEvent)="receiveMessage($event)" [productName]="dataFromParentComponent"></app-our-products>
+  <div *ngIf="message">
+    <h3>This is data from data service which can be modified from here or Shop</h3>
+    <p>{{message}}</p>
+    <button class="btn btn btn-danger" (click)="productChange()">Change Data</button>
+  </div>
 </div>

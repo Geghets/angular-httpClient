@@ -12,4 +12,9 @@
       {{data | titlecase}}
     </p>
   </div>
+  <div class="mt-5" *ngIf="message">
+    <h3>This is data from data service which can be modified from here or Product</h3>
+    <p>{{message}}</p>
+    <button class="btn btn btn-danger" (click)="shopChange()">Change Data</button>
+  </div>
 </div>
