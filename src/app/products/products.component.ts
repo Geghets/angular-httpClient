@@ -30,19 +30,12 @@ export class ProductsComponent implements OnInit {
   }
 
   spreadOperator () {
-    const array = [1, 5, 7, 2];
+    const withSpread = Math.max(...[1, 5, 7, 2]);
 
-    // Edito will not let us use array as parameter without spread operator
-    // const withoutSpread = Math.max(array);
-
-    const withSpread = Math.max(...array);
-
-    const values = {
+    return {
       without_spread: 'Will not work or will Return NaN',
       with_spread: withSpread
     };
-
-    return values;
   }
 
   changeInput() {
