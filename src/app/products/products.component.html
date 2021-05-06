@@ -1,9 +1,25 @@
 <div class="container products mt-5">
-  <h1 *ngIf="messageFromChildComponent">{{ messageFromChildComponent }}</h1>
+  <div *ngIf="messageFromChildComponent">
+    <h1>{{ messageFromChildComponent }}</h1>
+    <h4>Click button below to see child component running OnChange hook</h4>
+    <small>If everything is ok you will see "Change was detected" in console</small><br>
+    <button class="btn btn btn-info" (click)="changeInput()">Change Input</button>
+  </div>
   <app-our-products (messageOutputEvent)="receiveMessage($event)" [productName]="dataFromParentComponent"></app-our-products>
   <div *ngIf="message">
     <h3>This is data from data service which can be modified from here or Shop</h3>
     <p>{{message}}</p>
     <button class="btn btn btn-danger" (click)="productChange()">Change Data</button>
+  </div>
+  <hr class="divider">
+  <div>
+    <h1>Testing Spread operator</h1>
+    <div class="row">
+      <div class="col">
+        <h4>Using Math Max Without spread</h4>
+        <p>{{spreadValues.without_spread}}</p>
+      </div>
+      <div class="col"></div>
+    </div>
   </div>
 </div>
