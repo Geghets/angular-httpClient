@@ -7,3 +7,9 @@
 .divider {
   border-bottom: 2px solid white;
 }
+
+.header {
+  padding: 10px;
+  margin-bottom: 25px;
+  background-color: #F6D55C;
+}
