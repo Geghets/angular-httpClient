@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-httpclient-f0374": {
+      "hosting": {
+        "angular-httpClient": [
+          "angular-httpclient-f0374"
+        ]
+      }
+    }
+  }
+}
