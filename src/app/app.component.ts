@@ -15,7 +15,6 @@ export class AppComponent implements OnInit {
   constructor(private router: Router, private store: AngularFirestore) {}
 
   ngOnInit() {
-    console.log(this.store);
     // this.afs.collection('products').snapshotChanges().subscribe(data => {
     //   console.log('da', data);
     // });
