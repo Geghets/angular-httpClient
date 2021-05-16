@@ -1,0 +1,18 @@
+.item {
+  border: 1px solid black;
+}
+
+:host {
+  display: block;
+}
+
+.item {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
